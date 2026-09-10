@@ -11,7 +11,7 @@
 <title>Cristian Sites | Sites Profissionais em Florianópolis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
   --beige: #F5F1EA;
@@ -36,8 +36,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 60px;display:fl
 .hero-content{position:relative;z-index:1;}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--dourado);margin-bottom:28px;}
 .hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--dourado);}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.5vw,56px);font-weight:500;line-height:1.15;color:var(--preto);margin-bottom:22px;letter-spacing:-0.5px;}
-.hero h1 em{font-style:italic;color:var(--dourado);font-weight:400;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.2vw,64px);font-weight:700;line-height:1.15;color:var(--preto);margin-bottom:22px;letter-spacing:-0.5px;}
+.hero h1 em{font-style:italic;color:var(--dourado);font-weight:600;}
 .hero-sub{font-size:17px;line-height:1.75;color:var(--cinza);max-width:440px;margin-bottom:44px;}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
 .btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--preto);color:var(--branco);padding:15px 30px;border-radius:2px;font-size:13px;font-weight:500;letter-spacing:1px;text-decoration:none;transition:background 0.3s,transform 0.2s;}
@@ -92,7 +92,7 @@ section{padding:100px 60px;}
 .beneficio-card.visible{opacity:1;transform:translateY(0);}
 .beneficio-card:hover{box-shadow:0 8px 32px rgba(26,26,26,0.08);transform:translateY(-4px);}
 .beneficio-icon{width:48px;height:48px;background:var(--preto);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:20px;}
-.beneficio-card h3{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--preto);margin-bottom:10px;}
+.beneficio-card h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--preto);margin-bottom:10px;}
 .beneficio-card p{font-size:15px;line-height:1.6;color:var(--cinza);}
 
 .portfolio{background:var(--beige);}
@@ -150,6 +150,19 @@ footer{background:var(--preto);padding:48px 60px;display:flex;flex-direction:col
 .footer-local{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:1px;margin-bottom:8px;}
 .footer-wa{display:inline-flex;align-items:center;gap:8px;color:var(--dourado);font-size:13px;text-decoration:none;transition:opacity 0.3s;}
 .footer-wa:hover{opacity:0.75;}
+.footer-social{display:flex;align-items:center;gap:18px;margin:6px 0;}
+.footer-social a{
+  display:flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid rgba(255,255,255,0.15);
+  color:rgba(255,255,255,0.7);
+  transition:border-color 0.3s, color 0.3s;
+}
+.footer-social a:hover{border-color:var(--dourado);color:var(--dourado);}
+.footer-social a svg{width:17px;height:17px;}
+@media(max-width:600px){
+  .footer-social{flex-direction:column;gap:12px;}
+}
 .footer-copy{font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:0.5px;}
 
 .fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.6s ease,transform 0.6s ease;}
@@ -236,7 +249,6 @@ footer{background:var(--preto);padding:48px 60px;display:flex;flex-direction:col
     <p class="hero-sub">Sites profissionais para empresas e profissionais de Florianópolis. Design moderno, responsivo e pensado para converter visitantes em clientes.</p>
     <div class="hero-btns">
       <a href="https://wa.me/5548998163063?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20de%20site." target="_blank" class="btn-primary">Solicitar orçamento</a>
-      <a href="#como-funciona" class="btn-secondary">Como funciona →</a>
     </div>
   </div>
 
@@ -404,6 +416,17 @@ footer{background:var(--preto);padding:48px 60px;display:flex;flex-direction:col
   <div style="width:40px;height:1px;background:rgba(201,169,110,0.4);margin-bottom:8px;"></div>
   <a href="#" class="footer-logo">Cristian<span>Sites</span></a>
   <p class="footer-local">Florianópolis · SC · Brasil</p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/cristian.sites/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+    </a>
+    <a href="https://www.facebook.com/cristiansites" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@cristian.sites" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M15 3a5 5 0 0 0 5 5"/></svg>
+    </a>
+  </div>
   <div style="width:40px;height:1px;background:rgba(255,255,255,0.08);margin:4px 0;"></div>
   <p class="footer-copy">© 2025 Cristian Sites · Todos os direitos reservados</p>
 </footer>
